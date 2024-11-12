@@ -1,0 +1,9 @@
+File Management System (C++)
+This repository contains a simple C++ implementation for managing files with basic attributes such as file name and size. The File class is used to represent a file with two properties: its name and its size in kilobytes (KB). The class includes a constructor to initialize these properties and a member function display() to print the file's details to the console.
+
+Features:
+File Representation: Each file is represented by a File object containing the name and size.
+Display Functionality: The display() method allows printing the file name along with its size in KB.
+Usage:
+Create instances of the File class by providing the file name and size.
+Call the display() method to show the file's details.
