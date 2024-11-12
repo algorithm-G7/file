@@ -175,6 +175,5 @@ int main() {
     };
 
     menu(files);
-
-    return 0;
+     return 0;
 }
