@@ -1,0 +1,42 @@
+Function:  displayFiles  Purpose: This function iterates through a vector of File objects and calls the display method on each File object to print its details.
+
+Parameters: Takes a constant reference to a vector of File objects, ensuring the vector is not copied or modified.
+
+For Loop: Uses a range-based for loop (for (const auto& file : files)) to iterate over each File object in the vector.
+
+display() Method: For each File object, the display method is called to print the file's name and size        Function: linearSearch    Purpose: This function performs a linear search on the vector of File objects to find a file with a specified name.
+
+Parameters: Takes a constant reference to a vector of File objects and a string representing the file name to search for.
+
+For Loop: Iterates through the vector using an index-based for loop (for (size_t i = 0; i < files.size(); ++i)).
+
+Comparison: Compares the name of each File object with the given name (if (files[i].name == name)).
+
+Return Index: If a match is found, the index of the File object is returned.
+
+Return -1: If no match is found after the loop, -1 is returned to indicate the file was not found.  Function: binary Search Purpose: This function performs a binary search on a sorted vector of File objects to find a file with a specified name. Binary search is more efficient than linear search for sorted data.
+
+Parameters: Takes a constant reference to a vector of File objects and a string representing the file name to search for.
+
+Initialization: Initializes two variables, left (starting at the beginning of the vector) and right (starting at the end of the vector).
+
+While Loop: Continues to search while left is less than or equal to right:
+
+Calculate Middle: Finds the middle index (middle = left + (right - left) / 2).
+
+Comparison: Compares the name at the middle index with the given name:
+
+If they match, returns the middle index.
+
+If the middle name is less than the given name, adjusts left to middle + 1.
+
+If the middle name is greater than the given name, adjusts right to middle - 1.
+
+Return -1: If the file is not found, returns -1 to indicate the file was not found.
+
+Summary
+display Files: Prints the details of each file in the vector.
+
+linear Search: Searches for a file by name using a linear search algorithm and returns the index if found, otherwise -1.
+
+binary Search: Searches for a file by name using a binary search algorithm on a sorted vector and returns the index if found, otherwise -1.
