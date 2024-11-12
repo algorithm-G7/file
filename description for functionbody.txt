@@ -1,0 +1,33 @@
+This code implements a file management system with various functionalities: displaying files, searching for files, sorting files, adding new files, and deleting files. It uses a vector<File> to store the file information.
+
+Menu-Driven Interface
+
+The menu function provides a user-friendly interface with the following options:
+
+Display Files: Lists all the files in the system.
+Search File by Name (Linear Search): Searches for a file by name using a linear search algorithm.
+Search File by Name (Binary Search): Searches for a file by name using a binary search algorithm (assuming the files are sorted by name).
+Sort Files by Name: Sorts the files alphabetically by name using the QuickSort algorithm.
+Sort Files by Size: Sorts the files by size using the QuickSort algorithm.
+Add New File: Allows the user to add a new file to the system.
+Delete File by Name: Deletes a file from the system based on its name.
+Exit: Exits the program.
+Functionalities:
+
+Display Files: Iterates through the vector<File> and prints the details of each file.
+Linear Search: Iterates through the vector<File> sequentially, comparing each file's name with the target name.
+Binary Search: Assumes the files are sorted by name and uses a divide-and-conquer approach to efficiently search for the target file.
+QuickSort: A recursive sorting algorithm that partitions the array and recursively sorts the partitions.
+Add New File: Creates a new File object and adds it to the end of the vector<File>.
+Delete File by Name: Searches for the file using linear search and removes it from the vector<File> using the erase function.
+User Interaction:
+
+The menu function repeatedly prompts the user for input, processes the choice, and executes the corresponding function. The program continues until the user chooses to exit.
+
+Key Points:
+
+The File class (not shown in the code) likely contains members like name and size to store file information.
+The linearSearch and binarySearch functions return the index of the found file or -1 if not found.
+The quickSort function is used for both name-based and size-based sorting.
+The add and delete functions modify the vector<File> to add or remove files.
+The menu function provides a user-friendly interface to interact with the file management system.
