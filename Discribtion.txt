@@ -1,0 +1,20 @@
+File management in operating systems involves organizing, storing, retrieving, naming, sharing, and protecting files. Efficient file management requires effective searching and sorting algorithms to quickly locate and organize files.
+
+Role of Searching Algorithms
+Linear Search: A straightforward method where each file is compared sequentially until the desired file is found. It's simple but inefficient for large datasets.
+
+Binary Search: Efficient for sorted datasets. It repeatedly divides the search range in half, reducing the search interval significantly.
+
+Role of Sorting Algorithms
+Bubble Sort: Simple algorithm that repeatedly steps through the list, compares adjacent elements, and swaps them if they are in the wrong order. Not efficient for large datasets.
+
+QuickSort: Highly efficient divide-and-conquer algorithm. It picks an element as a pivot and partitions the array around the pivot. It's faster and commonly used in practice.
+
+Enhanced C++ Program
+We'll expand the C++ program to include:
+
+Dynamic File List: Allow adding and deleting files.
+
+Binary Search: Implement binary search for sorted file lists.
+
+Extended Menu: Provide options to add, delete, search, sort, and display files.
