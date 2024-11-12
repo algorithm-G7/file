@@ -1,4 +1,5 @@
-File Systemm Management:searching and sorting techiques
+File Systemm Management:  
+searching and sorting techiques
 
 This C++ application is a simple file management system that allows users to store, search, sort, and manipulate files within a list. Each file is represented by a File object that holds a name and size in kilobytes. The system supports various operations such as adding, deleting, displaying, searching, and sorting files. The core features of the application include:
 
