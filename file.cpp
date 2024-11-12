@@ -54,7 +54,7 @@ int binarySearch(const vector<File>& files, const string& name) {
 
 int partition(vector<File>& files, int low, int high, bool sortByName) {
     File pivot = files[high];
-    int i = low - 1;
+    int i = low -1;
 
     for (int j = low; j < high; ++j) {
         if (sortByName) {
