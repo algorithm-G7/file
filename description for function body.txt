@@ -1,0 +1,45 @@
+This code implements the QuickSort algorithm in C++ for sorting a vector of File objects. The sorting can be done based on either the file name or the file size, depending on the sortByName flag.
+
+Breakdown:
+
+partition Function:
+
+Purpose: Rearranges elements in a subarray to partition them around a pivot element.
+Parameters:
+files: The vector of File objects to be sorted.
+low: The starting index of the subarray.
+high: The ending index of the subarray.
+sortByName: A boolean flag indicating sorting by name (true) or size (false).
+Steps:
+Select Pivot: The last element (files[high]) is chosen as the pivot.
+Initialize: A variable i is set to low - 1 to keep track of the index for the smaller element wall.
+Partitioning Loop:
+Iterate through the subarray (j from low to high - 1).
+Comparison:
+If sortByName is true, compare the current element's name (files[j].name) with the pivot's name.
+Otherwise, compare the current element's size (files[j].size) with the pivot's size.
+Swap:
+If the current element is smaller (according to the sorting criteria), swap it with the element at index i + 1 and increment i. This effectively moves smaller elements to the left side of the pivot.
+Pivot Placement: Swap the pivot element with the element at index i + 1. This positions the pivot in its final sorted position.
+Return: The index i represents the partition point where elements smaller than the pivot are placed to its left, and elements larger are placed to its right.
+quickSort Function:
+
+Purpose: Implements the recursive QuickSort algorithm.
+Parameters:
+Same as partition.
+Steps:
+Base Case: If low is less than high (meaning there's at least one element to sort), proceed.
+Partitioning: Call the partition function to rearrange elements around the chosen pivot.
+Recursive Calls:
+Sort the left subarray from low to pi - 1 (elements smaller than the pivot).
+Sort the right subarray from pi + 1 to high (elements larger than the pivot).
+Overall Process:
+
+Call quickSort with the entire vector, low (0), high (vector size - 1), and sortByName.
+The quickSort function recursively partitions and sorts subarrays until the base case (low >= high) is reached, resulting in a fully sorted vector.
+In essence:
+
+QuickSort uses a divide-and-conquer approach, breaking down the main vector into smaller subarrays.
+The partition function rearranges elements in a subarray to separate them into smaller and larger partitions based on the pivot.
+The quickSort function recursively sorts the partitioned subarrays until the entire vector is sorted.
+The user can choose to sort by file name (sortByName = true) or by file size (sortByName = false).
