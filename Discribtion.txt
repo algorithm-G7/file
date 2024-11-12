@@ -1,4 +1,5 @@
-File management in operating systems involves organizing, storing, retrieving, naming, sharing, and protecting files. Efficient file management requires effective searching and sorting algorithms to quickly locate and organize files.
+File management 
+in operating systems involves organizing, storing, retrieving, naming, sharing, and protecting files. Efficient file management requires effective searching and sorting algorithms to quickly locate and organize files.
 
 Role of Searching Algorithms
 Linear Search: A straightforward method where each file is compared sequentially until the desired file is found. It's simple but inefficient for large datasets.
